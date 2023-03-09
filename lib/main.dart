@@ -49,10 +49,10 @@ class _AttendancePageState extends State<AttendancePage> {
           String message = '';
 
           for (var attendee in widget.attendees) {
-            if (attendee.isPresent) {
-              message += '${attendee.name} is present\n';
-            } else {
-              // message += '${attendee.name} is absent\n';
+           
+              if (attendee.isPresent) {
+                message += '${attendee.name}  ';
+             
             }
           }
 
